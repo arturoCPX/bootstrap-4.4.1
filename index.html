@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar narbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Task App</a>
+        </div>
+
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="task-form">
+                            <div class="mb-3">
+                                <input type="text" id="name" placeholder="Name" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Description"></textarea>
+                            </div>
+                            
+                            <input type="hidden" id="taskId">
+                            <button type="button" class="btn btn-primary w-100">
+                                <i class="ri-save-3-fill"></i> Save
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
