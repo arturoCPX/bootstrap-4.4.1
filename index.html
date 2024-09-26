@@ -12,32 +12,36 @@
 
 <body>
 
-    <nav class="navbar narbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <a href="#" class="navbar-brand">Task App</a>
         </div>
-
     </nav>
 
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-5">
-                <div class="card">
+                <div class="card mb-4">
                     <div class="card-body">
                         <form id="task-form">
                             <div class="mb-3">
-                                <input type="text" id="title" placeholder="Name" class="form-control">
+                                <input type="text" id="title" placeholder="Task Title" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Description"></textarea>
+                                <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Task Description" required></textarea>
                             </div>
-                            <input type="hidden" id="taskId">
-                            <button type="submit" class="btn btn-primary block w-100">Save</button>
+                            <button type="submit" class="btn btn-primary w-100">Save</button>
                         </form>
                     </div>
-                    <div id="tasks"></div>
-
                 </div>
+                
+                <!-- Filtro de tareas -->
+                <div class="mb-3">
+                    <input type="text" id="filter-input" placeholder="Filter tasks..." class="form-control">
+                </div>
+
+                <!-- Lista de tareas -->
+                <div id="tasks"></div>
             </div>
         </div>
     </div>
